@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hardware Collection</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: var(--accent);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card li {
+            padding: 6px 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .card li span.label {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💻 My PC & Laptop Collection</h1>
+        <p class="subtitle">An overview of all my systems and specifications</p>
+    </header>
+
+    <div class="grid">
+
+        <!-- PC 1 -->
+        <div class="card">
+            <h2>Desktop PC 1</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i5-11400F</li>
+                <li><span class="label">RAM:</span> 32 GB DDR4</li>
+                <li><span class="label">GPU:</span> NVIDIA RTX 2060 6GB</li>
+                <li><span class="label">Storage:</span> 1 TB Samsung SATA SSD</li>
+                <li><span class="label">Drive:</span> DVD Drive</li>
+                <li><span class="label">PSU:</span> 650 Watt</li>
+            </ul>
+        </div>
+
+        <!-- PC 2 -->
+        <div class="card">
+            <h2>Desktop PC 2</h2>
+            <ul>
+                <li><span class="label">CPU:</span> AMD A10-7890K</li>
+                <li><span class="label">RAM:</span> 16 GB DDR3</li>
+                <li><span class="label">GPU:</span> AMD RX 480 8GB</li>
+                <li><span class="label">Storage:</span> 250 GB Samsung SSD + 1 TB Seagate HDD</li>
+                <li><span class="label">Drive:</span> DVD Drive</li>
+                <li><span class="label">PSU:</span> 450 Watt</li>
+            </ul>
+        </div>
+
+        <!-- PC 3 -->
+        <div class="card">
+            <h2>Desktop PC 3</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i3-9100F</li>
+                <li><span class="label">RAM:</span> 8 GB DDR4</li>
+                <li><span class="label">GPU:</span> NVIDIA GTX 1050 Ti 4GB</li>
+                <li><span class="label">Storage:</span> 256 GB Intenso SSD</li>
+                <li><span class="label">PSU:</span> 550 Watt</li>
+            </ul>
+        </div>
+
+        <!-- PC 4 -->
+        <div class="card">
+            <h2>Desktop PC 4</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i3-4130</li>
+                <li><span class="label">RAM:</span> 8 GB DDR3</li>
+                <li><span class="label">GPU:</span> NVIDIA GTX 1050 Ti 4GB</li>
+                <li><span class="label">Storage:</span> 750 GB Toshiba HDD</li>
+                <li><span class="label">PSU:</span> 450 Watt</li>
+            </ul>
+        </div>
+
+        <!-- Toshiba Laptop -->
+        <div class="card">
+            <h2>Toshiba Satellite P750-100</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i7-2630QM</li>
+                <li><span class="label">RAM:</span> 8 GB DDR3</li>
+                <li><span class="label">GPU:</span> NVIDIA GT 540M</li>
+                <li><span class="label">Storage:</span> ~240 GB SSD</li>
+                <li><span class="label">Drive:</span> Blu-ray Drive</li>
+            </ul>
+        </div>
+
+        <!-- Asus Laptop -->
+        <div class="card">
+            <h2>ASUS Laptop</h2>
+            <ul>
+                <li><span class="label">CPU:</span> AMD A4-5000</li>
+                <li><span class="label">RAM:</span> 8 GB DDR3</li>
+                <li><span class="label">GPU:</span> AMD Radeon HD 8330</li>
+                <li><span class="label">Storage:</span> 240 GB SSD</li>
+                <li><span class="label">Drive:</span> DVD Drive</li>
+            </ul>
+        </div>
+
+        <!-- ThinkPad L14 -->
+        <div class="card">
+            <h2>Lenovo ThinkPad L14 Gen 1</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i7-10610U</li>
+                <li><span class="label">RAM:</span> 16 GB DDR4</li>
+                <li><span class="label">GPU:</span> Intel UHD Graphics 620</li>
+                <li><span class="label">Storage:</span> 512 GB NVMe SSD</li>
+            </ul>
+        </div>
+
+        <!-- Acer Aspire -->
+        <div class="card">
+            <h2>Acer Aspire</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core i3-3120M (?)</li>
+                <li><span class="label">RAM:</span> 8 GB DDR3</li>
+                <li><span class="label">GPU:</span> Intel HD Graphics 4000</li>
+                <li><span class="label">Storage:</span> 500 GB SSD</li>
+                <li><span class="label">Drive:</span> DVD Drive</li>
+            </ul>
+        </div>
+
+        <!-- MacBook Pro 2009 -->
+        <div class="card">
+            <h2>MacBook Pro 13" (2009)</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Core 2 Duo</li>
+                <li><span class="label">RAM:</span> 8 GB DDR3</li>
+                <li><span class="label">GPU:</span> NVIDIA GeForce 9400M</li>
+                <li><span class="label">Storage:</span> 128 GB SSD + 500 GB HDD</li>
+                <li><span class="label">Drive:</span> None (Removed)</li>
+            </ul>
+        </div>
+
+        <!-- Medion 2018 -->
+        <div class="card">
+            <h2>Medion Laptop (2018)</h2>
+            <ul>
+                <li><span class="label">CPU:</span> Intel Celeron</li>
+                <li><span class="label">RAM:</span> 4 GB DDR4</li>
+                <li><span class="label">GPU:</span> Intel HD Graphics</li>
+                <li><span class="label">Storage:</span> 128 GB SSD</li>
+            </ul>
+        </div>
+
+        <!-- Netbooks -->
+        <div class="card">
+            <h2>Netbooks (3 Units)</h2>
+            <ul>
+                <li><span class="label">Brands:</span> ASUS, HP, Compaq</li>
+                <li><span class="label">Type:</span> Compact Subnotebooks / Netbooks</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Hardware Collection © 2026</p>
+    </footer>
+
+</body>
+</html>
